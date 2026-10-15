@@ -1,0 +1,6 @@
+{
+  "name": "FLEXI - Step Into Your Day",
+  "description": "Thương hiệu dép sục và giày dép phong cách sống FLEXI. Tùy biến dép 2D Custom Studio, bộ sưu tập Classic Clog, Slide, Sandal, cẩm nang phối đồ và trải nghiệm mua sắm trực tuyến.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

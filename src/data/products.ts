@@ -1,0 +1,163 @@
+import type { Product, Review } from '../types/index.ts';
+
+export const SAMPLE_REVIEWS: Review[] = [
+  {
+    id: 'rev-1',
+    author: 'Minh Anh',
+    rating: 5,
+    date: '14/10/2026',
+    comment: 'Dép mang siêu êm chân! Đi bộ cả ngày ở trường không bị mỏi. Màu kem bên ngoài nhìn sang chảnh hơn trong ảnh nhiều, gắn charm hoa cúc siêu cưng.',
+    verified: true,
+    userColor: 'Màu Kem (Cream)',
+  },
+  {
+    id: 'rev-2',
+    author: 'Quốc Huy',
+    rating: 5,
+    date: '12/10/2026',
+    comment: 'Chất liệu EVA đúc nguyên khối chống nước cực tốt, trời mưa đi thoải mái không sợ trơn trượt. Đế bám rãnh sâu an toàn. Đáng tiền!',
+    verified: true,
+    userColor: 'Đen Tuyển (Black)',
+  },
+  {
+    id: 'rev-3',
+    author: 'Khánh Linh',
+    rating: 5,
+    date: '08/10/2026',
+    comment: 'Studio 2D tùy biến tiện lợi thật sự, mình tự khắc tên và gắn 4 charm cá tính. Lúc nhận hàng đúng y hệt bản thiết kế trên web!',
+    verified: true,
+    userColor: 'Hồng Pastel (Pink)',
+  },
+  {
+    id: 'rev-4',
+    author: 'Hoàng Nam',
+    rating: 4,
+    date: '02/10/2026',
+    comment: 'Màu xanh olive rất độc lạ và tôn da. Bạn nào chân bè nên chọn đúng size hoặc tăng 1 size theo bảng hướng dẫn là vừa in.',
+    verified: true,
+    userColor: 'Xanh Olive (Olive Green)',
+  },
+];
+
+export const FLEXI_PRODUCTS: Product[] = [
+  {
+    id: 'clog-core',
+    name: 'FLEXI Clog Classic',
+    tagline: 'Êm ái cả ngày - Chuẩn form bàn chân Việt',
+    category: 'clog',
+    basePrice: 499000,
+    rating: 4.9,
+    reviewCount: 384,
+    description: 'Mẫu dép sục kinh điển của FLEXI được tối ưu hoá theo phom dáng bàn chân người Việt. Ứng dụng công nghệ hạt bọt EVA Phylon 2.0 kháng khuẩn, quai đeo gập 180° linh hoạt chuyển đổi giữa phong cách dạo phố thư thái và cố định gót chắc chắn khi vận động.',
+    features: [
+      'Đế bọt khí đệm dày 3.8cm triệt tiêu phản lực khi bước đi',
+      'Hệ thống 14 lỗ thông khí đối lưu chống hầm bí mồ hôi chân',
+      'Đế ngoài phủ rãnh gai chống trượt đạt tiêu chuẩn SRC',
+      'Tích hợp khớp xoay quai hậu gia cố tán đinh logo F dập nổi',
+      'Tương thích hoàn hảo với bộ sưu tập 16 charm FLEXI Studio'
+    ],
+    materials: 'Hợp chất EVA Phylon bọt mật độ kép, kháng khuẩn Odor-Shield',
+    availableSizes: [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+    variants: [
+      { colorName: 'Màu Kem (Cream)', colorHex: '#EFECE6', image: 'clog-color-cream.png', alt: 'FLEXI Clog Classic Màu Kem' },
+      { colorName: 'Đen Tuyển (Black)', colorHex: '#1C1C1E', image: 'clog-color-black.png', alt: 'FLEXI Clog Classic Đen Tuyển' },
+      { colorName: 'Xám Xi Măng (Gray)', colorHex: '#8E8E93', image: 'clog-color-gray.png', alt: 'FLEXI Clog Classic Xám' },
+      { colorName: 'Hồng Pastel (Pink)', colorHex: '#FFB6C1', image: 'clog-color-pink.png', alt: 'FLEXI Clog Classic Hồng' },
+      { colorName: 'Xanh Biển (Ocean Blue)', colorHex: '#5B92E5', image: 'clog-color-blue.png', alt: 'FLEXI Clog Classic Xanh Biển' },
+      { colorName: 'Xanh Olive (Olive Green)', colorHex: '#606C38', image: 'clog-color-olive.png', alt: 'FLEXI Clog Classic Xanh Olive' },
+    ],
+    views: {
+      side: 'clog-side',
+      top: 'clog-top',
+      sole: 'clog-sole',
+      lifestyle: 'clog-lifestyle',
+    },
+    isBestSeller: true,
+  },
+  {
+    id: 'slide-cloud',
+    name: 'FLEXI Slide Cloud',
+    tagline: 'Phóng khoáng tự do - Bước đệm bồng bềnh',
+    category: 'slide',
+    basePrice: 389000,
+    rating: 4.8,
+    reviewCount: 192,
+    description: 'Dép quai ngang đúc nguyên khối công thái học SoftCloud ôm trọn mu bàn chân. Thiết kế lòng dép lõm công thái học hỗ trợ vòm bàn chân, hạn chế mỏi chân tối đa cho những chuyến đi biển, sau giờ tập gym hoặc thư giãn tại nhà.',
+    features: [
+      'Đế dốc công thái học nâng đỡ vòm chân tự nhiên',
+      'Độ dốc 15° vùng mũi bảo vệ các đầu ngón chân',
+      'Bề mặt quai có gân thoát ẩm và vân sần chống dính',
+      'Trọng lượng siêu nhẹ chỉ 135g mỗi chiếc'
+    ],
+    materials: 'EVA nguyên sinh đàn hồi cao Eco-Flex',
+    availableSizes: [36, 37, 38, 39, 40, 41, 42, 43, 44],
+    variants: [
+      { colorName: 'Màu Kem (Cream)', colorHex: '#EFECE6', image: 'slide-cream.png', alt: 'FLEXI Slide Màu Kem' },
+      { colorName: 'Đen Tuyển (Black)', colorHex: '#1C1C1E', image: 'slide-black.png', alt: 'FLEXI Slide Đen' },
+      { colorName: 'Xanh Olive (Olive Green)', colorHex: '#606C38', image: 'slide-olive.png', alt: 'FLEXI Slide Xanh Olive' },
+    ],
+    views: {
+      side: 'slide-side',
+      top: 'slide-top',
+      sole: 'slide-sole',
+    },
+    isNew: true,
+  },
+  {
+    id: 'sandal-active',
+    name: 'FLEXI Sandal Active',
+    tagline: 'Vững chãi mọi nẻo đường - Quai dán đa năng',
+    category: 'sandal',
+    basePrice: 459000,
+    rating: 4.85,
+    reviewCount: 147,
+    description: 'Sandal quai hậu thể thao với hệ thống khóa dán Velcro 3 điểm tùy chỉnh kích thước linh hoạt. Sự kết hợp hoàn hảo giữa đế bọt EVA êm ái và đai dù dệt kỹ thuật số bền chắc, sẵn sàng đồng hành cùng bạn từ phố xá đến những cung đường dã ngoại.',
+    features: [
+      'Khóa dán Velcro 3 vùng: mũi, cổ chân và gót chân',
+      'Đệm lót chân xốp rãnh sóng kích thích tuần hoàn',
+      'Vải dệt Polyester tái chế nhanh khô chống nước bẩn',
+      'Đế ngoài cao su nhiệt dẻo bám địa hình sỏi đá'
+    ],
+    materials: 'Đế đệm EVA + Đai dệt kỹ thuật số kháng xé + Đinh tán hợp kim',
+    availableSizes: [37, 38, 39, 40, 41, 42, 43, 44, 45],
+    variants: [
+      { colorName: 'Đen Tuyển (Black)', colorHex: '#1C1C1E', image: 'sandal-black.png', alt: 'FLEXI Sandal Active Đen' },
+      { colorName: 'Xanh Olive (Olive Green)', colorHex: '#606C38', image: 'sandal-olive.png', alt: 'FLEXI Sandal Active Olive' },
+      { colorName: 'Xanh Biển (Ocean Blue)', colorHex: '#5B92E5', image: 'sandal-blue.png', alt: 'FLEXI Sandal Active Xanh Biển' },
+    ],
+    views: {
+      side: 'sandal-side',
+      top: 'sandal-top',
+      sole: 'sandal-sole',
+    },
+    isNew: false,
+  },
+  {
+    id: 'clog-y2k',
+    name: 'FLEXI Clog Y2K Chrome Edition',
+    tagline: 'Bản giới hạn - Năng lượng đường phố tương lai',
+    category: 'clog',
+    basePrice: 549000,
+    rating: 4.95,
+    reviewCount: 88,
+    description: 'Phiên bản kỷ niệm đặc biệt lấy cảm hứng từ trào lưu Y2K Cyberpunk. Bề mặt phủ hiệu ứng ánh bạc xà cừ chuyển sắc, đi kèm sẵn bộ 3 charm kim loại đính đá độc quyền.',
+    features: [
+      'Lớp phủ ánh kim chuyển sắc bảo vệ tia UV',
+      'Tặng kèm combo 3 charm Cyberpunk độc quyền',
+      'Hộp quà Hologram phiên bản sưu tầm',
+      'Bảo hành đổi trả miễn phí 30 ngày'
+    ],
+    materials: 'EVA Phylon mạ Chrome phủ Ceramic chống xước',
+    availableSizes: [36, 37, 38, 39, 40, 41, 42],
+    variants: [
+      { colorName: 'Bạc Ánh Kim (Silver Chrome)', colorHex: '#D4D4D8', image: 'clog-silver.png', alt: 'FLEXI Clog Y2K Bạc' },
+      { colorName: 'Tím Oải Hương (Lavender)', colorHex: '#C8B6E2', image: 'clog-lavender.png', alt: 'FLEXI Clog Y2K Tím' },
+    ],
+    views: {
+      side: 'clog-side',
+      top: 'clog-top',
+      sole: 'clog-sole',
+    },
+    isNew: true,
+  },
+];
